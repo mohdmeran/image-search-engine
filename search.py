@@ -2,6 +2,8 @@ from colordescriptor import ColorDescriptors
 from searcher import Searcher
 import cv2
 
+# Code Source : https://www.pyimagesearch.com/2014/12/01/complete-guide-building-image-search-engine-python-opencv/
+
 class search:
     def doSearch(queryPath, resultPath):
         # contruct the argument parser and parse the arguments

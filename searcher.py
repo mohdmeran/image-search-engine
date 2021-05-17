@@ -1,6 +1,8 @@
 import numpy as np
 import csv
 
+# Code Source : https://www.pyimagesearch.com/2014/12/01/complete-guide-building-image-search-engine-python-opencv/
+
 class Searcher:
     def __init__(self, indexPath):
         self.indexPath = indexPath

@@ -2,6 +2,8 @@ import numpy as np
 import cv2
 import imutils
 
+# Code Source : https://www.pyimagesearch.com/2014/12/01/complete-guide-building-image-search-engine-python-opencv/
+
 class ColorDescriptors:
     def __init__(self, bins):
         # store the number of bins for the 3D histogram

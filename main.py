@@ -72,9 +72,11 @@ while True:
     event, values = window.read()
     if event == "Exit" or event == sg.WIN_CLOSED:
         break
-    # Detect an event an do an action accordingly
+
     if event == "Load Query Image":
         filename = values["-FILE-"]
+
+        # Upload the image to GUI and start search for similar images
         if os.path.exists(filename) and os.path.exists("./index.csv") and os.path.exists(folder):
             image = Image.open(filename)
             image.thumbnail((400, 400))
@@ -93,6 +95,7 @@ while True:
         else:
             window["-TERROR-"].update("Missing index.csv or dataset folder!, please do indexing first before proceed to query")
 
+    # Upload directory and start indexing
     elif event == "Go Indexing":
         folder = values["-INDEX_FOLDER-"]
         if os.path.exists(folder):

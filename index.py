@@ -2,6 +2,8 @@ from colordescriptor import ColorDescriptors
 import glob
 import cv2
 
+# Code Source : https://www.pyimagesearch.com/2014/12/01/complete-guide-building-image-search-engine-python-opencv/
+
 class index:
 
     def goIndex(data_dir):
